@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AWS_Azure_Cognito</string>
+    <string name="custom_url_scheme">_SETME_</string>
+    <string name="sign_in_button_title">Sign In</string>
+    <string name="sign_out_button_title">Sign Out</string>
+    <string name="unauthenticated_text">Sign in with your Microsoft Azure account</string>
+
+</resources>
