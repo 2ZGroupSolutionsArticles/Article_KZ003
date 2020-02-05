@@ -6,7 +6,7 @@ The complete sign-in flow described on the [diagram](https://docs.aws.amazon.com
 
 [![](https://lh5.googleusercontent.com/8uoS3mKNYRpm58BOzG7lcJLJXh5sv_HXa1H-58N08zR0U8lheQol-bgmU2woWaQTT3AiZnyehPgru75UhJVV5dkRyTnYcTPlm99OFxpundSqD3BeX2n9kG6zvNu6UIZOJKdoUdgd)](https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cognito-integrating-user-pools-with-identity-pools.html)
 
-Please refer to the [first part](https://github.com/SezorusArticles/Article_KZ001) of the tutorial for more information about sign-in process and settings for AWS Cognito and Azure AD.
+Please refer to the [first part](https://github.com/2ZGroupSolutionsArticles/Article_KZ001) of the tutorial for more information about sign-in process and settings for AWS Cognito and Azure AD.
 
 After finishing the settings in AWS console and Azure portal you should have all of this parameters:
 
@@ -18,7 +18,7 @@ After finishing the settings in AWS console and Azure portal you should have all
 -   Sign Out URL;  
 -   Region.
  
-You should also have a test user account, assigned to the corresponding Azure AD enterprise application in Azure portal. Refer the [tutorial](https://github.com/SezorusArticles/Article_KZ001/blob/master/README.md) how to invite a user.
+You should also have a test user account, assigned to the corresponding Azure AD enterprise application in Azure portal. Refer the [tutorial](https://github.com/2ZGroupSolutionsArticles/Article_KZ001/blob/master/README.md) how to invite a user.
 
 The Android Project setup consists of 4 steps:
 1.  Add dependencies to your ```app/build.gradle```.
@@ -68,19 +68,19 @@ Fill the corresponding keys by replacing ```_SETME_``` with keys which you’ve 
 
 1. ```AppClientId``` and ```AppClientSecret``` - the client id and secret of your app, assigned to the User Pool in AWS Cognito. See the [tutorial](https://github.com/SezorusArticles/Article_KZ001/blob/master/README.md) how to setup it.
     
-2.  ```AWSCognitoWebDomain``` - [Amazon Cognito hosted domain](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-assign-domain.html) for the address of your sign-up and sign-in webpages. You can also use own web address as a custom domain. See the [tutorial](https://github.com/SezorusArticles/Article_KZ001/blob/master/README.md) how to set Amazon Cognito hosted domain. Nothe that for the Android project AWSCognitoWebDomain should be used without protocol value (without the ``http://`` or ``https://`` at the beginning). For example, If your domain in AWS Cognito Console is:
+2.  ```AWSCognitoWebDomain``` - [Amazon Cognito hosted domain](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-assign-domain.html) for the address of your sign-up and sign-in webpages. You can also use own web address as a custom domain. See the [tutorial](https://github.com/2ZGroupSolutionsArticles/Article_KZ001/blob/master/README.md) how to set Amazon Cognito hosted domain. Nothe that for the Android project AWSCognitoWebDomain should be used without protocol value (without the ``http://`` or ``https://`` at the beginning). For example, If your domain in AWS Cognito Console is:
     [https://ios-app-tutorial.auth.us-east-1.amazoncognito.com](https://ios-app-tutorial.auth.us-east-1.amazoncognito.com)
     
     You should set ```AWSCognitoWebDomain``` as:
     [ios-app-tutorial.auth.us-east-1.amazoncognito.com](https://ios-app-tutorial.auth.us-east-1.amazoncognito.com)
 
-3.  ```UserPoolId``` - id of your Cognito User Pool. See the [tutorial](https://github.com/SezorusArticles/Article_KZ001/blob/master/README.md) how to setup it.
+3.  ```UserPoolId``` - id of your Cognito User Pool. See the [tutorial](https://github.com/2ZGroupSolutionsArticles/Article_KZ001/blob/master/README.md) how to setup it.
     
 4.  ```SignInRedirect``` - the URL which will be called after your app performs signIn operation. For the Andoid project, this is custom deep link like androidAppScheme:// (see the Defining a [Create Deep Links to App Content](https://developer.android.com/training/app-links/deep-linking) ). Note that in ```intent-filter``` ```scheme``` should be set without "://".
     
 5.  ```SignOutRedirect``` - the URL which will be called after your app performs sign-out operation. You can use the same custom scheme as for CognitoAuthSignInRedirectUri or define another scheme. Make sure that CognitoAuthSignInRedirectUri and CognitoAuthSignOutRedirectUri which you set in the app match with corresponding values for your app client (in AWS User Pool app client settings).
     
-6. ```COGNITO_IDENTITY_POOL_ID ```- id of your Cognito Identity Pool. See the [tutorial](https://github.com/SezorusArticles/Article_KZ001/blob/master/README.md) how to setup it.
+6. ```COGNITO_IDENTITY_POOL_ID ```- id of your Cognito Identity Pool. See the [tutorial](https://github.com/2ZGroupSolutionsArticles/Article_KZ001/blob/master/README.md) how to setup it.
     
 7.  ```COGNITO_IDENTITY_POOL_REGION``` -  [AWS Region](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html) is separate geographic area where Amazon cloud computing resources are hosted. 
     
@@ -158,7 +158,7 @@ Avoid call `credentials` and `identityId` from  the main thread. In the sample a
 ```
 auth.signOut()
 ```
-You can check the [demo project](https://github.com/SezorusArticles/Article_KZ003/tree/master/AWS_Azure_Cognito), replace ```_SETME_``` values in AWSConstants file with own to make it work.
+You can check the [demo project](https://github.com/2ZGroupSolutionsArticles/Article_KZ003/tree/master/AWS_Azure_Cognito), replace ```_SETME_``` values in AWSConstants file with own to make it work.
 
 #### Additional Sources:
 
@@ -179,6 +179,6 @@ You can check the [demo project](https://github.com/SezorusArticles/Article_KZ00
 
 Kseniia Zozulia
 
-Email:  [kseniiazozulia@sezorus.com](mailto:kseniiazozulia@sezorus.com)
+Email:  [kseniiazozulia@2zgroup.net](mailto:kseniiazozulia@2zgroup.net)
 
 LinkedIn:  [Kseniia Zozulia](https://www.linkedin.com/in/629bb187)
