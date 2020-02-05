@@ -66,7 +66,7 @@ val credProvider = CognitoCachingCredentialsProvider(applicationContext,
 
 Fill the corresponding keys by replacing ```_SETME_``` with keys which you’ve prepared at the first part of the tutorial. To be sure that you set the correct keys to check the description for each key:
 
-1. ```AppClientId``` and ```AppClientSecret``` - the client id and secret of your app, assigned to the User Pool in AWS Cognito. See the [tutorial](https://github.com/SezorusArticles/Article_KZ001/blob/master/README.md) how to setup it.
+1. ```AppClientId``` and ```AppClientSecret``` - the client id and secret of your app, assigned to the User Pool in AWS Cognito. See the [tutorial](https://github.com/2ZGroupSolutionsArticles/Article_KZ001/blob/master/README.md) how to setup it.
     
 2.  ```AWSCognitoWebDomain``` - [Amazon Cognito hosted domain](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-assign-domain.html) for the address of your sign-up and sign-in webpages. You can also use own web address as a custom domain. See the [tutorial](https://github.com/2ZGroupSolutionsArticles/Article_KZ001/blob/master/README.md) how to set Amazon Cognito hosted domain. Nothe that for the Android project AWSCognitoWebDomain should be used without protocol value (without the ``http://`` or ``https://`` at the beginning). For example, If your domain in AWS Cognito Console is:
     [https://ios-app-tutorial.auth.us-east-1.amazoncognito.com](https://ios-app-tutorial.auth.us-east-1.amazoncognito.com)
